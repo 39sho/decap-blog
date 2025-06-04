@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "decap-blog",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,7 +9,8 @@
     "dev": "react-router dev",
     "postinstall": "npm run cf-typegen",
     "preview": "npm run build && vite preview",
-    "typecheck": "npm run cf-typegen && react-router typegen && tsc -b"
+    "typecheck": "npm run cf-typegen && react-router typegen && tsc -b",
+    "fmt": "biome check --write"
   },
   "dependencies": {
     "isbot": "^5.1.27",
@@ -18,6 +19,7 @@
     "react-router": "^7.5.3"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@cloudflare/vite-plugin": "^1.0.12",
     "@react-router/dev": "^7.5.3",
     "@tailwindcss/vite": "^4.1.4",
