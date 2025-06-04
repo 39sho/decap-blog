@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: 39sho/decap-blog
+  base_url: http://localhost:5173
   auth_endpoint: /api/auth
 media_folder: "public/images"
 collections:
